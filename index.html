@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)https://nudtcalculus.github.io/Hash-GS/ -->
+<html class="fontawesome-i2svg-active fontawesome-i2svg-complete" data-eusoft-scrollable-element="1"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">
+.anticon {
+  display: inline-block;
+  color: inherit;
+  font-style: normal;
+  line-height: 0;
+  text-align: center;
+  text-transform: none;
+  vertical-align: -0.125em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.anticon > * {
+  line-height: 1;
+}
+
+.anticon svg {
+  display: inline-block;
+}
+
+.anticon::before {
+  display: none;
+}
+
+.anticon .anticon-icon {
+  display: block;
+}
+
+.anticon[tabindex] {
+  cursor: pointer;
+}
+
+.anticon-spin::before,
+.anticon-spin {
+  display: inline-block;
+  -webkit-animation: loadingCircle 1s infinite linear;
+  animation: loadingCircle 1s infinite linear;
+}
+
+@-webkit-keyframes loadingCircle {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loadingCircle {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+</style>
+  
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG">
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG">
+  <meta property="og:url" content="URL OF THE WEBSITE">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Whole-body Action Generative for Simulated Humanoids-Object Interaction</title>
+  <style type="text/css">svg:not(:root).svg-inline--fa{overflow:visible}.svg-inline--fa{display:inline-block;font-size:inherit;height:1em;overflow:visible;vertical-align:-.125em}.svg-inline--fa.fa-lg{vertical-align:-.225em}.svg-inline--fa.fa-w-1{width:.0625em}.svg-inline--fa.fa-w-2{width:.125em}.svg-inline--fa.fa-w-3{width:.1875em}.svg-inline--fa.fa-w-4{width:.25em}.svg-inline--fa.fa-w-5{width:.3125em}.svg-inline--fa.fa-w-6{width:.375em}.svg-inline--fa.fa-w-7{width:.4375em}.svg-inline--fa.fa-w-8{width:.5em}.svg-inline--fa.fa-w-9{width:.5625em}.svg-inline--fa.fa-w-10{width:.625em}.svg-inline--fa.fa-w-11{width:.6875em}.svg-inline--fa.fa-w-12{width:.75em}.svg-inline--fa.fa-w-13{width:.8125em}.svg-inline--fa.fa-w-14{width:.875em}.svg-inline--fa.fa-w-15{width:.9375em}.svg-inline--fa.fa-w-16{width:1em}.svg-inline--fa.fa-w-17{width:1.0625em}.svg-inline--fa.fa-w-18{width:1.125em}.svg-inline--fa.fa-w-19{width:1.1875em}.svg-inline--fa.fa-w-20{width:1.25em}.svg-inline--fa.fa-pull-left{margin-right:.3em;width:auto}.svg-inline--fa.fa-pull-right{margin-left:.3em;width:auto}.svg-inline--fa.fa-border{height:1.5em}.svg-inline--fa.fa-li{width:2em}.svg-inline--fa.fa-fw{width:1.25em}.fa-layers svg.svg-inline--fa{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.fa-layers{display:inline-block;height:1em;position:relative;text-align:center;vertical-align:-.125em;width:1em}.fa-layers svg.svg-inline--fa{-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter,.fa-layers-text{display:inline-block;position:absolute;text-align:center}.fa-layers-text{left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter{background-color:#ff253a;border-radius:1em;-webkit-box-sizing:border-box;box-sizing:border-box;color:#fff;height:1.5em;line-height:1;max-width:5em;min-width:1.5em;overflow:hidden;padding:.25em;right:0;text-overflow:ellipsis;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-bottom-right{bottom:0;right:0;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom right;transform-origin:bottom right}.fa-layers-bottom-left{bottom:0;left:0;right:auto;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom left;transform-origin:bottom left}.fa-layers-top-right{right:0;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-top-left{left:0;right:auto;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top left;transform-origin:top left}.fa-lg{font-size:1.3333333333em;line-height:.75em;vertical-align:-.0667em}.fa-xs{font-size:.75em}.fa-sm{font-size:.875em}.fa-1x{font-size:1em}.fa-2x{font-size:2em}.fa-3x{font-size:3em}.fa-4x{font-size:4em}.fa-5x{font-size:5em}.fa-6x{font-size:6em}.fa-7x{font-size:7em}.fa-8x{font-size:8em}.fa-9x{font-size:9em}.fa-10x{font-size:10em}.fa-fw{text-align:center;width:1.25em}.fa-ul{list-style-type:none;margin-left:2.5em;padding-left:0}.fa-ul>li{position:relative}.fa-li{left:-2em;position:absolute;text-align:center;width:2em;line-height:inherit}.fa-border{border:solid .08em #eee;border-radius:.1em;padding:.2em .25em .15em}.fa-pull-left{float:left}.fa-pull-right{float:right}.fa.fa-pull-left,.fab.fa-pull-left,.fal.fa-pull-left,.far.fa-pull-left,.fas.fa-pull-left{margin-right:.3em}.fa.fa-pull-right,.fab.fa-pull-right,.fal.fa-pull-right,.far.fa-pull-right,.fas.fa-pull-right{margin-left:.3em}.fa-spin{-webkit-animation:fa-spin 2s infinite linear;animation:fa-spin 2s infinite linear}.fa-pulse{-webkit-animation:fa-spin 1s infinite steps(8);animation:fa-spin 1s infinite steps(8)}@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}.fa-rotate-90{-webkit-transform:rotate(90deg);transform:rotate(90deg)}.fa-rotate-180{-webkit-transform:rotate(180deg);transform:rotate(180deg)}.fa-rotate-270{-webkit-transform:rotate(270deg);transform:rotate(270deg)}.fa-flip-horizontal{-webkit-transform:scale(-1,1);transform:scale(-1,1)}.fa-flip-vertical{-webkit-transform:scale(1,-1);transform:scale(1,-1)}.fa-flip-both,.fa-flip-horizontal.fa-flip-vertical{-webkit-transform:scale(-1,-1);transform:scale(-1,-1)}:root .fa-flip-both,:root .fa-flip-horizontal,:root .fa-flip-vertical,:root .fa-rotate-180,:root .fa-rotate-270,:root .fa-rotate-90{-webkit-filter:none;filter:none}.fa-stack{display:inline-block;height:2em;position:relative;width:2.5em}.fa-stack-1x,.fa-stack-2x{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.svg-inline--fa.fa-stack-1x{height:1em;width:1.25em}.svg-inline--fa.fa-stack-2x{height:2em;width:2.5em}.fa-inverse{color:#fff}.sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.sr-only-focusable:active,.sr-only-focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}.svg-inline--fa .fa-primary{fill:var(--fa-primary-color,currentColor);opacity:1;opacity:var(--fa-primary-opacity,1)}.svg-inline--fa .fa-secondary{fill:var(--fa-secondary-color,currentColor);opacity:.4;opacity:var(--fa-secondary-opacity,.4)}.svg-inline--fa.fa-swap-opacity .fa-primary{opacity:.4;opacity:var(--fa-secondary-opacity,.4)}.svg-inline--fa.fa-swap-opacity .fa-secondary{opacity:1;opacity:var(--fa-primary-opacity,1)}.svg-inline--fa mask .fa-primary,.svg-inline--fa mask .fa-secondary{fill:#000}.fad.fa-inverse{color:#fff}</style><link rel="icon" type="image/x-icon" href="https://nudtcalculus.github.io/Hash-GS/static/images/favicon.ico">
+  <link href="./SimGenHoi/css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./SimGenHoi/bulma.min.css">
+  <link rel="stylesheet" href="./SimGenHoi/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./SimGenHoi/bulma-slider.min.css">
+  <link rel="stylesheet" href="./SimGenHoi/fontawesome.all.min.css">
+  <link rel="stylesheet" href="./SimGenHoi/academicons.min.css">
+  <link rel="stylesheet" href="./SimGenHoi/index.css">
+
+  <script src="./SimGenHoi/jquery.min.js"></script>
+  <script src="./SimGenHoi/main.js"></script><script src="./SimGenHoi/ViewSDKInterface.js"></script>
+  <script defer="" src="./SimGenHoi/fontawesome.all.min.js"></script>
+  <script src="./SimGenHoi/bulma-carousel.min.js"></script>
+  <script src="./SimGenHoi/bulma-slider.min.js"></script>
+  <script src="./SimGenHoi/index.js"></script>
+<style type="text/css">.ViewSDK_hideOverflow {
+        overflow: hidden;
+    }</style><style type="text/css">.ViewSDK_parentRelativeWidth {
+        width: 100%;
+    }</style><style type="text/css">.ViewSDK_viewportRelativeWidth {
+        width: 100vw;
+    }</style><style type="text/css">.ViewSDK_parentRelativeHeight {
+        height: 100%;
+    }</style><style type="text/css">.ViewSDK_viewportRelativeHeight {
+        height: 100vh;
+    }</style><style type="text/css">.ViewSDK_fullScreenPDFViewer {
+        width:100vw !important; height:100vh !important;
+        max-width:100vw !important; max-height:100vh !important;
+        position:fixed; top:0; left:0; z-index:99999;
+        margin: 0 !important; padding: 0 !important;
+        border: none !important;
+    }</style><style type="text/css">:root { --ViewSDK-mobile-viewport-height:1vh; }</style><style type="text/css">.ViewSDK_fullScreenPDFViewerMobile {
+        width:100vw !important; height:calc(100 * var(--ViewSDK-mobile-viewport-height)) !important;
+        max-width:100vw !important; max-height:calc(100 * var(--ViewSDK-mobile-viewport-height)) !important;
+        position:fixed; top:0; left:0; z-index:99999;
+        margin: 0 !important; padding: 0 !important;
+        border: none !important;
+    }</style><style type="text/css">.ViewSDK_hideOverflow {
+        overflow: hidden;
+    }</style><style type="text/css">.ViewSDK_parentRelativeWidth {
+        width: 100%;
+    }</style><style type="text/css">.ViewSDK_viewportRelativeWidth {
+        width: 100vw;
+    }</style><style type="text/css">.ViewSDK_parentRelativeHeight {
+        height: 100%;
+    }</style><style type="text/css">.ViewSDK_viewportRelativeHeight {
+        height: 100vh;
+    }</style><style type="text/css">.ViewSDK_fullScreenPDFViewer {
+        width:100vw !important; height:100vh !important;
+        max-width:100vw !important; max-height:100vh !important;
+        position:fixed; top:0; left:0; z-index:9999;
+        margin: 0 !important; padding: 0 !important;
+        border: none !important;
+    }</style><style type="text/css">.ViewSDK_LBFullScreenPDFViewer {
+        width:100vw !important; height:100vh !important;
+        max-width:100vw !important; max-height:100vh !important;
+        position:fixed; top:0; left:0; z-index:10000;
+        margin: 0 !important; padding: 0 !important;
+        background-color: rgba(0, 0, 0, 0.2);
+        border: none !important;
+    }</style><style type="text/css">:root { --ViewSDK-mobile-viewport-height:1vh; }</style><style type="text/css">.ViewSDK_fullScreenPDFViewerMobile {
+        width:100vw !important; height:calc(100 * var(--ViewSDK-mobile-viewport-height)) !important;
+        max-width:100vw !important; max-height:calc(100 * var(--ViewSDK-mobile-viewport-height)) !important;
+        position:fixed; top:0; left:0; z-index:9999;
+        margin: 0 !important; padding: 0 !important;
+        border: none !important;
+    }</style><style type="text/css">.ViewSDK_LBLoader {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 10000;
+        border: 4px solid #f3f3f3;
+        border-top: 4px solid #1473E6;
+        width: 56px !important;
+        height: 56px !important;
+        margin: -32px 0 0 -32px;
+        border-radius: 50%;
+        -webkit-animation: lbSpin 2s linear infinite;
+        animation: lbSpin 2s linear infinite;
+    }
+    @-webkit-keyframes lbSpin {
+        0% { -webkit-transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(360deg); }
+    }
+    @keyframes lbSpin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }</style><style>.eudic-tippy-content-container[_ngcontent-ng-c3962093456]{max-width:250px!important}</style><style>.eusoft-eudic-translate-failed-container[_ngcontent-ng-c3081775404]{position:fixed!important;bottom:50px!important;right:50px!important;border-radius:5px!important;box-shadow:0 6px 24px #00000014!important;z-index:2147483647!important}.eusoft-eudic-translate-failed-content-script[_ngcontent-ng-c3081775404]{border:1px solid #E8E8E8!important;background-color:#f8fafe!important}html.light-en   [_nghost-ng-c3081775404]   .eusoft-eudic-translate-failed-container[_ngcontent-ng-c3081775404]{border:1px solid #E8E8E8!important;background-color:#f8fafe!important}html.light-fr   [_nghost-ng-c3081775404]   .eusoft-eudic-translate-failed-container[_ngcontent-ng-c3081775404]{border:1px solid #E8E8E8!important;background-color:#f8fafe!important}html.light-de   [_nghost-ng-c3081775404]   .eusoft-eudic-translate-failed-container[_ngcontent-ng-c3081775404]{border:1px solid #E8E8E8!important;background-color:#f8fafe!important}html.light-es   [_nghost-ng-c3081775404]   .eusoft-eudic-translate-failed-container[_ngcontent-ng-c3081775404]{border:1px solid #E8E8E8!important;background-color:#f8fafe!important}html.dark-en   [_nghost-ng-c3081775404]   .eusoft-eudic-translate-failed-container[_ngcontent-ng-c3081775404]{border:1px solid #595959!important;background-color:#212125!important}html.dark-fr   [_nghost-ng-c3081775404]   .eusoft-eudic-translate-failed-container[_ngcontent-ng-c3081775404]{border:1px solid #595959!important;background-color:#212125!important}html.dark-de   [_nghost-ng-c3081775404]   .eusoft-eudic-translate-failed-container[_ngcontent-ng-c3081775404]{border:1px solid #595959!important;background-color:#212125!important}html.dark-es   [_nghost-ng-c3081775404]   .eusoft-eudic-translate-failed-container[_ngcontent-ng-c3081775404]{border:1px solid #595959!important;background-color:#212125!important}</style></head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop" data-eusoft-scrollable-element="1">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title" data-eusoft-scrollable-element="1">Whole-body Action Generative for Simulated Humanoids-Object Interaction'</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a target="_blank">Yuhang Lin</a><sup>1</sup>,</span>
+                <span class="author-block">
+                  <a target="_blank">Yijia Xie</a><sup>1</sup>,</span>
+                  <span class="author-block">
+                    <a target="_blank">Jiahong Xie</a><sup>1</sup>,</span>
+                    <span class="author-blokc">
+                      <a target="_blank">Zhongzhi Zhu</a><sup>2</sup>,</span>
+                      <span class="author-blokc">
+                        <a target="_blank">Yong Liu</a><sup>1,*</sup>,</span>
+                        <span class="author-blokc">
+                          <a target="_blank">Xingxing Zuo</a><sup>3,*</sup></span>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">1. Institute of Cyber-Systems and Control, Zhejiang University, China.
+                      <br>2. Zhejiang Guoli Xinan Technology Co., Ltd.
+                      <br>3. Technical University of Munich, Germany</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Corresponding Authors</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <!-- <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span> -->
+
+                    <!-- Supplementary PDF link -->
+                    <span class="link-block">
+                      <a href="ToDo" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <svg class="svg-inline--fa fa-file-pdf fa-w-12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-pdf" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z"></path></svg><!-- <i class="fas fa-file-pdf"></i> Font Awesome fontawesome.com -->
+                      </span>
+                      <span>Paper</span>
+                    </a>
+                  </span>
+
+                  <span class="link-block">
+                    <a href="ToDo" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <svg class="svg-inline--fa fa-file-pdf fa-w-12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-pdf" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z"></path></svg><!-- <i class="fas fa-file-pdf"></i> Font Awesome fontawesome.com -->
+                    </span>
+                    <span>Paper(Compressed)</span>
+                  </a>
+                </span>
+
+                  <!-- Github link -->
+                  <!-- <span class="link-block">
+                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span> -->
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="ToDo" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <svg class="svg-inline--fa fa-youtube fa-w-18" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg><!-- <i class="fab fa-youtube"></i> Font Awesome fontawesome.com -->
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <source src="static/videos/banner_video.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+      </h2>
+    </div>
+  </div>
+</section> -->
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop" data-eusoft-scrollable-element="1">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3" data-eusoft-scrollable-element="1">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Sim-in-the-Loop Generative Human-Object Interaction.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Youtube video -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container" data-eusoft-scrollable-element="1">
+      <!-- Paper video. -->
+      <h2 class="title is-3" data-eusoft-scrollable-element="1">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video">
+            <!-- Youtube embed code here -->
+            <iframe src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End youtube video -->
+
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3" data-eusoft-scrollable-element="1">Method</h2>
+      <div id="results-carousel" class="carousel results-carousel" data-eusoft-scrollable-element="1">
+       
+      
+      
+  <div id="slider1cf07e1c-fef3-49a6-aef7-8eb20157fb7c" class="slider" tabindex="0" data-eusoft-scrollable-element="1">
+    <div class="slider-container" style="opacity: 1; width: 12096px; transition: 300ms; transform: translate3d(-5376px, 0px, 0px);"><div class="slider-item" data-slider-index="-2" data-cloned="true" style="width: 1344px;"><div class="item">
+        <!-- Your image here -->
+        <img src="" alt="MY ALT TEXT">
+        <h2 class="subtitle has-text-centered" data-eusoft-scrollable-element="1">
+          TODO.
+        </h2>
+      </div></div><div class="slider-item" data-slider-index="-1" data-cloned="true" style="width: 1344px;"><div class="item">
+  <div class="slider-navigation-previous"><svg viewBox="0 0 50 80" xml:space="preserve">
+      <polyline fill="currentColor" stroke-width=".5em" stroke-linecap="round" stroke-linejoin="round" points="45.63,75.8 0.375,38.087 45.63,0.375 "></polyline>
+    </svg></div>
+<div class="slider-navigation-next"><svg viewBox="0 0 50 80" xml:space="preserve">
+      <polyline fill="currentColor" stroke-width=".5em" stroke-linecap="round" stroke-linejoin="round" points="0.375,0.375 45.63,38.087 0.375,75.8 "></polyline>
+    </svg></div><div class="slider-pagination"><div class="slider-page" data-index="0"></div><div class="slider-page" data-index="1"></div><div class="slider-page is-active" data-index="2"></div></div></div></div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3" data-eusoft-scrollable-element="1">Experiments</h2>
+      <div id="results-carousel" class="carousel results-carousel" data-eusoft-scrollable-element="1">
+       
+     
+  <div id="sliderf2867420-8ae9-4e8c-91cb-7a5a42bab827" class="slider" tabindex="0" data-eusoft-scrollable-element="1">
+    <div class="slider-container" style="opacity: 1; width: 14784px; transition: 300ms; transform: translate3d(-5376px, 0px, 0px);"><div class="slider-item" data-slider-index="-2" data-cloned="true" style="width: 1344px;"><div class="item">
+        <!-- Your image here -->
+        <img src="" alt="MY ALT TEXT">
+        <h2 class="subtitle has-text-centered" data-eusoft-scrollable-element="1">
+          TODO.
+       </h2>
+     </div></div><div class="slider-item" data-slider-index="-1" data-cloned="true" style="width: 1344px;"><div class="item">
+  <div class="slider-navigation-previous"><svg viewBox="0 0 50 80" xml:space="preserve">
+      <polyline fill="currentColor" stroke-width=".5em" stroke-linecap="round" stroke-linejoin="round" points="45.63,75.8 0.375,38.087 45.63,0.375 "></polyline>
+    </svg></div>
+<div class="slider-navigation-next"><svg viewBox="0 0 50 80" xml:space="preserve">
+      <polyline fill="currentColor" stroke-width=".5em" stroke-linecap="round" stroke-linejoin="round" points="0.375,0.375 45.63,38.087 0.375,75.8 "></polyline>
+    </svg></div><div class="slider-pagination"><div class="slider-page" data-index="0"></div><div class="slider-page" data-index="1"></div><div class="slider-page is-active" data-index="2"></div><div class="slider-page" data-index="3"></div></div></div></div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+
+<!-- Video carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3" data-eusoft-scrollable-element="1">TODO</h2>
+      <video poster="" id="video1" autoplay="" controls="" muted="" loop="" height="100%">
+        <!-- Your video file here -->
+        <source src="" type="video/mp4">
+      </video>
+    </div>
+    </div>
+  
+</section>
+<!-- End video carousel -->
+
+
+
+<!-- Paper poster -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section> -->
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+  <!-- <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section> -->
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container" data-eusoft-scrollable-element="1">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the&nbsp;<a href="https://nerfies.github.io/" target="_blank">Nerfies</a>&nbsp;project page.
+            <br> This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  
+  
+<div id="aiknowledge_pdf_auto_upload" style="position: fixed; top: 8px; right: 8px; z-index: 9999; background-color: white;"><template shadowrootmode="open"><link rel="stylesheet" href="chrome-extension://nchidjaafkcjdgdbbdpkpokodiehhcdg/content-script/style.css"><div data-v-app=""><main class="content-script-container" data-v-f5c2522d="" style="display: none;"><div class="banner neutral-10-b" data-v-f5c2522d=""><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODUiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCA4NSAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0wIDEwLjEzODJMMy44Mzk3MiAzLjkzMzRDNC42MzIwMyAyLjY1Mjg2IDYuMDIxNzggMS44NzUgNy41MTY4NiAxLjg3NUMxMC45MjI4IDEuODc1IDEyLjk5OTEgNS42NTg2MyAxMS4xOTQgOC41NzU1N0wxMC4zNTcyIDkuOTI3NzVMMTUuMjAxIDE4LjQwMUgxMi43NTg4TDkuMDg3NyAxMS45NzkyTDYuNDMwMTQgMTYuMjczNUgxMC4zNDU2TDExLjQzNCAxOC40MDEzSDUuMTEzODJWMTguNDAwNkw1LjExMzQyIDE4LjQwMTJMMCAxMC4xMzgyWk03Ljg5NjU0IDkuODkwMDdINy44OTM0NEw3Ljg5NDkzIDkuODkyNjdMNS4xMTM4OSAxNC4zODY1TDIuNDg0ODUgMTAuMTM4MUw1LjYyNjcgNS4wNjEwMkM2LjAzNjgyIDQuMzk4MjMgNi43NDM2MyA0LjAwMjY1IDcuNTE3MzMgNC4wMDI2NUM4LjcwMjczIDQuMDAyNjUgOS4yNzU5NCA0LjgxNDAyIDkuNDY3MyA1LjE2Mjc5QzkuNjU4ODQgNS41MTE3NCAxMC4wMzYxIDYuNDMyNjkgOS40MDc5NiA3LjQ0NzhMNy44OTY1NCA5Ljg5MDA3WiIgZmlsbD0iIzFGNzFFMCIvPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTIwLjA5NDMgNS40MzI1QzIxLjQ3NDYgNS40MzI1IDIyLjUyODIgNS42ODgwNyAyMy4yNTUxIDYuMTk5MjFDMjMuOTkxMyA2LjcxMDM1IDI0LjM1OTMgNy40OTEgMjQuMzU5MyA4LjU0MTE2QzI0LjM1OTMgOS44NTE1MyAyMy43MTk4IDEwLjczOTEgMjIuNDQwOCAxMS4yMDM3QzIyLjYxNTYgMTEuNDE3NSAyMi44MTM0IDExLjY3NzcgMjMuMDM0MyAxMS45ODQ0QzIzLjI1NTEgMTIuMjkxMSAyMy40ODA2IDEyLjYyNTYgMjMuNzEwNiAxMi45ODgxQzIzLjk0MDcgMTMuMzQxMiAyNC4xNjE1IDEzLjcwODMgMjQuMzczMiAxNC4wODkzQzI0LjU4NDggMTQuNDYxMSAyNC43NzM0IDE0LjgyODIgMjQuOTM5MSAxNS4xOTA2SDIyLjk5MjlDMjIuODE4MSAxNC44NTYxIDIyLjYyOTQgMTQuNTIxNSAyMi40MjcgMTQuMTg2OUMyMi4yMjQ1IDEzLjg0MzEgMjIuMDE3NSAxMy41MTMyIDIxLjgwNTkgMTMuMTk3MkMyMS42MDM0IDEyLjg3MTkgMjEuNDAxIDEyLjU2OTkgMjEuMTk4NSAxMi4yOTExQzIwLjk5NjEgMTIuMDAzIDIwLjgwNzUgMTEuNzQ3NCAyMC42MzI2IDExLjUyNDRDMjAuNTAzOCAxMS41MzM2IDIwLjM5MzQgMTEuNTM4MyAyMC4zMDE0IDExLjUzODNDMjAuMjA5MyAxMS41MzgzIDIwLjEyMTkgMTEuNTM4MyAyMC4wMzkxIDExLjUzODNIMTkuMTk3MVYxNS4xOTA2SDE3LjQ1OFY1LjY2OTQ4QzE3Ljg4MTMgNS41NzY1NSAxOC4zMzIyIDUuNTE2MTQgMTguODEwNyA1LjQ4ODI2QzE5LjI4OTIgNS40NTEwOSAxOS43MTcgNS40MzI1IDIwLjA5NDMgNS40MzI1Wk0yMC4yMTg1IDYuOTUxOThDMTkuODUwNSA2Ljk1MTk4IDE5LjUxIDYuOTY1OTIgMTkuMTk3MSA2Ljk5MzhWMTAuMTE2NEgxOS45NTYzQzIwLjM3OTYgMTAuMTE2NCAyMC43NTIyIDEwLjA5MzIgMjEuMDc0MyAxMC4wNDY3QzIxLjM5NjQgMTAuMDAwMiAyMS42NjMyIDkuOTE2NTkgMjEuODc0OSA5Ljc5NTc3QzIyLjA5NTcgOS42NzQ5NiAyMi4yNjEzIDkuNTEyMzIgMjIuMzcxOCA5LjMwNzg3QzIyLjQ4MjIgOS4xMDM0MSAyMi41Mzc0IDguODQzMTkgMjIuNTM3NCA4LjUyNzIyQzIyLjUzNzQgOC4yMjk4MyAyMi40ODIyIDcuOTc4OSAyMi4zNzE4IDcuNzc0NDVDMjIuMjYxMyA3LjU2OTk5IDIyLjEwMDMgNy40MDczNiAyMS44ODg3IDcuMjg2NTRDMjEuNjg2MiA3LjE2NTczIDIxLjQ0MjQgNy4wODIwOSAyMS4xNTcxIDcuMDM1NjJDMjAuODcxOSA2Ljk3OTg2IDIwLjU1OSA2Ljk1MTk4IDIwLjIxODUgNi45NTE5OFpNMjUuNjE1NiAxMS41ODAxQzI1LjYxNTYgMTAuOTM4OSAyNS43MDc2IDEwLjM3NjYgMjUuODkxNiA5Ljg5MzM1QzI2LjA4NDggOS40MTAwOSAyNi4zMzc5IDkuMDEwNDggMjYuNjUwOCA4LjY5NDVDMjYuOTYzNiA4LjM2OTIzIDI3LjMyMjUgOC4xMjc2IDI3LjcyNzQgNy45Njk2MUMyOC4xMzIyIDcuODAyMzMgMjguNTQ2MyA3LjcxODY5IDI4Ljk2OTYgNy43MTg2OUMyOS45NjM0IDcuNzE4NjkgMzAuNzM2NCA4LjAzMDAyIDMxLjI4ODUgOC42NTI2OEMzMS44NDk4IDkuMjc1MzQgMzIuMTMwNCAxMC4yMDQ3IDMyLjEzMDQgMTEuNDQwN0MzMi4xMzA0IDExLjUzMzYgMzIuMTI1OCAxMS42NDA1IDMyLjExNjYgMTEuNzYxM0MzMi4xMTY2IDExLjg3MjkgMzIuMTEyIDExLjk3NTEgMzIuMTAyOCAxMi4wNjhIMjcuMzQwOUMyNy4zODY5IDEyLjY1MzUgMjcuNTg5MyAxMy4xMDg5IDI3Ljk0ODIgMTMuNDM0MkMyOC4zMTYzIDEzLjc1MDEgMjguODQ1NCAxMy45MDgxIDI5LjUzNTUgMTMuOTA4MUMyOS45NDA0IDEzLjkwODEgMzAuMzA4NSAxMy44NzA5IDMwLjYzOTcgMTMuNzk2NkMzMC45ODAyIDEzLjcyMjMgMzEuMjQ3MSAxMy42NDMzIDMxLjQ0MDMgMTMuNTU5NkwzMS42NjExIDE0LjkzOTdDMzEuNTY5MSAxNC45ODYyIDMxLjQ0MDMgMTUuMDM3MyAzMS4yNzQ3IDE1LjA5M0MzMS4xMTgyIDE1LjEzOTUgMzAuOTM0MiAxNS4xODEzIDMwLjcyMjYgMTUuMjE4NUMzMC41MjAxIDE1LjI2NSAzMC4yOTkzIDE1LjMwMjEgMzAuMDYgMTUuMzNDMjkuODIwOCAxNS4zNTc5IDI5LjU3NjkgMTUuMzcxOCAyOS4zMjg1IDE1LjM3MThDMjguNjkzNiAxNS4zNzE4IDI4LjE0MTQgMTUuMjc4OSAyNy42NzIyIDE1LjA5M0MyNy4yMDI5IDE0Ljg5NzkgMjYuODE2NCAxNC42MzMgMjYuNTEyNyAxNC4yOTg0QzI2LjIwOTEgMTMuOTU0NiAyNS45ODM2IDEzLjU1NSAyNS44MzY0IDEzLjA5OTZDMjUuNjg5MiAxMi42MzQ5IDI1LjYxNTYgMTIuMTI4NCAyNS42MTU2IDExLjU4MDFaTTMwLjQ2MDMgMTAuODI3M0MzMC40NjAzIDEwLjU5NSAzMC40MjgxIDEwLjM3NjYgMzAuMzYzNyAxMC4xNzIyQzMwLjI5OTMgOS45NTg0MSAzMC4yMDI3IDkuNzc3MTkgMzAuMDczOCA5LjYyODQ5QzI5Ljk1NDIgOS40NzA1IDI5LjgwMjQgOS4zNDk2OSAyOS42MTgzIDkuMjY2MDVDMjkuNDQzNSA5LjE3MzExIDI5LjIzMTkgOS4xMjY2NSAyOC45ODM0IDkuMTI2NjVDMjguNzI1OCA5LjEyNjY1IDI4LjUwMDMgOS4xNzc3NiAyOC4zMDcxIDkuMjc5OTlDMjguMTEzOCA5LjM3MjkyIDI3Ljk0ODIgOS40OTgzOCAyNy44MTAyIDkuNjU2MzdDMjcuNjgxNCA5LjgxNDM2IDI3LjU4MDEgOS45OTU1OCAyNy41MDY1IDEwLjJDMjcuNDMyOSAxMC40MDQ1IDI3LjM4MjMgMTAuNjEzNiAyNy4zNTQ3IDEwLjgyNzNIMzAuNDYwM1pNMzYuMjUyNiAxNC4wMDU3QzM2Ljc2NzkgMTQuMDA1NyAzNy4xNTkgMTMuOTc3OCAzNy40MjU5IDEzLjkyMjFWMTIuMDU0MUMzNy4zMzM4IDEyLjAyNjIgMzcuMjAwNCAxMS45OTgzIDM3LjAyNTYgMTEuOTcwNEMzNi44NTA3IDExLjk0MjYgMzYuNjU3NSAxMS45Mjg2IDM2LjQ0NTkgMTEuOTI4NkMzNi4yNjE4IDExLjkyODYgMzYuMDczMiAxMS45NDI2IDM1Ljg4IDExLjk3MDRDMzUuNjk1OSAxMS45OTgzIDM1LjUyNTcgMTIuMDQ5NCAzNS4zNjkzIDEyLjEyMzhDMzUuMjIyIDEyLjE5ODEgMzUuMTAyNCAxMi4zMDUgMzUuMDEwNCAxMi40NDQ0QzM0LjkxODQgMTIuNTc0NSAzNC44NzI0IDEyLjc0MTggMzQuODcyNCAxMi45NDYzQzM0Ljg3MjQgMTMuMzQ1OSAzNC45OTY2IDEzLjYyNDcgMzUuMjQ1IDEzLjc4MjdDMzUuNDkzNSAxMy45MzE0IDM1LjgyOTMgMTQuMDA1NyAzNi4yNTI2IDE0LjAwNTdaTTM2LjExNDYgNy43MTg2OUMzNi42NjY3IDcuNzE4NjkgMzcuMTMxNCA3Ljc4ODM5IDM3LjUwODcgNy45Mjc3OUMzNy44ODYgOC4wNjcxOSAzOC4xODUgOC4yNjIzNSAzOC40MDU5IDguNTEzMjhDMzguNjM1OSA4Ljc2NDIgMzguNzk2OSA5LjA3MDg4IDM4Ljg4ODkgOS40MzMzM0MzOC45OTAyIDkuNzg2NDggMzkuMDQwOCAxMC4xNzY4IDM5LjA0MDggMTAuNjA0M1YxNS4wMjMzQzM4Ljc4MzEgMTUuMDc5MSAzOC4zOTIxIDE1LjE0NDIgMzcuODY3NSAxNS4yMTg1QzM3LjM1MjIgMTUuMzAyMSAzNi43Njc5IDE1LjM0NCAzNi4xMTQ2IDE1LjM0NEMzNS42ODIxIDE1LjM0NCAzNS4yODY0IDE1LjMwMjEgMzQuOTI3NiAxNS4yMTg1QzM0LjU2ODcgMTUuMTM0OSAzNC4yNjA0IDE1LjAwMDEgMzQuMDAyOCAxNC44MTQyQzMzLjc1NDMgMTQuNjI4NCAzMy41NTY1IDE0LjM4NjcgMzMuNDA5MyAxNC4wODkzQzMzLjI3MTMgMTMuNzkyIDMzLjIwMjIgMTMuNDI0OSAzMy4yMDIyIDEyLjk4ODFDMzMuMjAyMiAxMi41Njk5IDMzLjI4MDUgMTIuMjE2NyAzMy40MzY5IDExLjkyODZDMzMuNjAyNSAxMS42NDA1IDMzLjgyMzQgMTEuNDA4MiAzNC4wOTk0IDExLjIzMTZDMzQuMzc1NSAxMS4wNDU3IDM0LjY5MjkgMTAuOTE1NiAzNS4wNTE4IDEwLjg0MTNDMzUuNDE5OSAxMC43NTc2IDM1LjgwMTcgMTAuNzE1OCAzNi4xOTc0IDEwLjcxNThDMzYuMzgxNSAxMC43MTU4IDM2LjU3NDcgMTAuNzI5OCAzNi43NzcxIDEwLjc1NzZDMzYuOTc5NiAxMC43NzYyIDM3LjE5NTggMTAuODEzNCAzNy40MjU5IDEwLjg2OTJWMTAuNTkwNEMzNy40MjU5IDEwLjM5NTIgMzcuNDAyOSAxMC4yMDkzIDM3LjM1NjggMTAuMDMyOEMzNy4zMTA4IDkuODU2MTggMzcuMjI4IDkuNzAyODQgMzcuMTA4NCA5LjU3MjczQzM2Ljk5OCA5LjQzMzMzIDM2Ljg0NjEgOS4zMjY0NSAzNi42NTI5IDkuMjUyMTFDMzYuNDY4OSA5LjE3Nzc2IDM2LjIzNDIgOS4xNDA1OCAzNS45NDkgOS4xNDA1OEMzNS41NjI1IDkuMTQwNTggMzUuMjA4MiA5LjE2ODQ3IDM0Ljg4NjIgOS4yMjQyM0MzNC41NjQxIDkuMjc5OTkgMzQuMzAxOSA5LjM0NTA0IDM0LjA5OTQgOS40MTkzOUwzMy44OTI0IDguMDUzMjVDMzQuMTA0IDcuOTc4OSAzNC40MTIzIDcuOTA0NTYgMzQuODE3MiA3LjgzMDIxQzM1LjIyMiA3Ljc1NTg2IDM1LjY1NDUgNy43MTg2OSAzNi4xMTQ2IDcuNzE4NjlaTTQyLjIwOTEgMTEuNTI0NEM0Mi4yMDkxIDEyLjI2NzggNDIuMzgzOSAxMi44NTMzIDQyLjczMzYgMTMuMjgwOEM0My4wODMzIDEzLjY5OSA0My41NjY0IDEzLjkwODEgNDQuMTgyOSAxMy45MDgxQzQ0LjQ0OTcgMTMuOTA4MSA0NC42NzUyIDEzLjg5ODggNDQuODU5MiAxMy44ODAyQzQ1LjA1MjQgMTMuODUyNCA0NS4yMDg5IDEzLjgyNDUgNDUuMzI4NSAxMy43OTY2VjkuNjE0NTVDNDUuMTgxMyA5LjUxMjMyIDQ0Ljk4MzQgOS40MTkzOSA0NC43MzUgOS4zMzU3NUM0NC40OTU3IDkuMjQyODEgNDQuMjM4MSA5LjE5NjM1IDQzLjk2MiA5LjE5NjM1QzQzLjM1NDcgOS4xOTYzNSA0Mi45MDg0IDkuNDA1NDUgNDIuNjIzMiA5LjgyMzY1QzQyLjM0NzEgMTAuMjQxOSA0Mi4yMDkxIDEwLjgwODggNDIuMjA5MSAxMS41MjQ0Wk00Ni45OTg2IDE0Ljk2NzZDNDYuNjY3NCAxNS4wNjk4IDQ2LjI0ODcgMTUuMTYyNyA0NS43NDI2IDE1LjI0NjRDNDUuMjQ1NyAxNS4zMyA0NC43MjEyIDE1LjM3MTggNDQuMTY5MSAxNS4zNzE4QzQzLjU5ODYgMTUuMzcxOCA0My4wODc5IDE1LjI4MzYgNDIuNjM3IDE1LjEwN0M0Mi4xODYxIDE0LjkzMDQgNDEuNzk5NiAxNC42Nzk1IDQxLjQ3NzUgMTQuMzU0MkM0MS4xNjQ3IDE0LjAxOTYgNDAuOTIwOCAxMy42MiA0MC43NDYgMTMuMTU1NEM0MC41ODA0IDEyLjY4MTQgNDAuNDk3NiAxMi4xNTE3IDQwLjQ5NzYgMTEuNTY2MkM0MC40OTc2IDEwLjk5IDQwLjU2NjYgMTAuNDY5NSA0MC43MDQ2IDEwLjAwNDlDNDAuODUxOCA5LjUzMDkxIDQxLjA2MzUgOS4xMjY2NSA0MS4zMzk1IDguNzkyMDhDNDEuNjE1NiA4LjQ1NzUyIDQxLjk1MTQgOC4yMDE5NSA0Mi4zNDcxIDguMDI1MzdDNDIuNzQyOCA3LjgzOTUgNDMuMTk4MyA3Ljc0NjU3IDQzLjcxMzYgNy43NDY1N0M0NC4wNjMyIDcuNzQ2NTcgNDQuMzcxNSA3Ljc4ODM5IDQ0LjYzODQgNy44NzIwM0M0NC45MDUyIDcuOTU1NjcgNDUuMTM1MyA4LjA0ODYgNDUuMzI4NSA4LjE1MDgzTDQ1LjMzMTggNC4zOTIwOUw0Ni45OTg2IDQuMzczMDVWMTQuOTY3NlpNNTEuNzIwMSA1LjQzMjVDNTMuMTA5NSA1LjQzMjUgNTQuMTcyMyA1LjY4ODA3IDU0LjkwODUgNi4xOTkyMUM1NS42NTM4IDYuNzEwMzUgNTYuMDI2NSA3LjUwOTU5IDU2LjAyNjUgOC41OTY5MkM1Ni4wMjY1IDkuMTYzODIgNTUuOTI1MyA5LjY1MTcyIDU1LjcyMjggMTAuMDYwNkM1NS41Mjk2IDEwLjQ2MDMgNTUuMjQ0MyAxMC43OTAyIDU0Ljg2NzEgMTEuMDUwNEM1NC40ODk4IDExLjMwMTMgNTQuMDI5NyAxMS40ODcyIDUzLjQ4NjggMTEuNjA4QzUyLjk0MzkgMTEuNzI4OCA1Mi4zMjI4IDExLjc4OTIgNTEuNjIzNCAxMS43ODkySDUwLjc1MzlWMTUuMTkwNkg0OS4wMTQ3VjUuNjY5NDhDNDkuNDE5NiA1LjU3NjU1IDQ5Ljg2NTkgNS41MTYxNCA1MC4zNTM2IDUuNDg4MjZDNTAuODUwNSA1LjQ1MTA5IDUxLjMwNiA1LjQzMjUgNTEuNzIwMSA1LjQzMjVaTTUxLjg0NDMgNi45NTE5OEM1MS40MDI2IDYuOTUxOTggNTEuMDM5MSA2Ljk2NTkyIDUwLjc1MzkgNi45OTM4VjEwLjI4MzdINTEuNTk1OEM1Mi40MzMyIDEwLjI4MzcgNTMuMDc3MyAxMC4xNjc1IDUzLjUyODIgOS45MzUxN0M1My45NzkxIDkuNjkzNTUgNTQuMjA0NSA5LjI0MjgxIDU0LjIwNDUgOC41ODI5OEM1NC4yMDQ1IDguMjY3IDU0LjE0NDcgOC4wMDIxNCA1NC4wMjUxIDcuNzg4MzlDNTMuOTA1NSA3LjU3NDY0IDUzLjczOTggNy40MDczNiA1My41MjgyIDcuMjg2NTRDNTMuMzE2NiA3LjE2NTczIDUzLjA2MzUgNy4wODIwOSA1Mi43NjkxIDcuMDM1NjJDNTIuNDgzOCA2Ljk3OTg2IDUyLjE3NTUgNi45NTE5OCA1MS44NDQzIDYuOTUxOThaTTU5LjY1NCAxNC4wMDU3QzYwLjE2OTMgMTQuMDA1NyA2MC41NjAzIDEzLjk3NzggNjAuODI3MiAxMy45MjIxVjEyLjA1NDFDNjAuNzM1MiAxMi4wMjYyIDYwLjYwMTcgMTEuOTk4MyA2MC40MjY5IDExLjk3MDRDNjAuMjUyMSAxMS45NDI2IDYwLjA1ODggMTEuOTI4NiA1OS44NDcyIDExLjkyODZDNTkuNjYzMiAxMS45Mjg2IDU5LjQ3NDUgMTEuOTQyNiA1OS4yODEzIDExLjk3MDRDNTkuMDk3MyAxMS45OTgzIDU4LjkyNyAxMi4wNDk0IDU4Ljc3MDYgMTIuMTIzOEM1OC42MjM0IDEyLjE5ODEgNTguNTAzNyAxMi4zMDUgNTguNDExNyAxMi40NDQ0QzU4LjMxOTcgMTIuNTc0NSA1OC4yNzM3IDEyLjc0MTggNTguMjczNyAxMi45NDYzQzU4LjI3MzcgMTMuMzQ1OSA1OC4zOTc5IDEzLjYyNDcgNTguNjQ2NCAxMy43ODI3QzU4Ljg5NDggMTMuOTMxNCA1OS4yMzA3IDE0LjAwNTcgNTkuNjU0IDE0LjAwNTdaTTU5LjUxNTkgNy43MTg2OUM2MC4wNjggNy43MTg2OSA2MC41MzI3IDcuNzg4MzkgNjAuOTEgNy45Mjc3OUM2MS4yODczIDguMDY3MTkgNjEuNTg2MyA4LjI2MjM1IDYxLjgwNzIgOC41MTMyOEM2Mi4wMzcyIDguNzY0MiA2Mi4xOTgzIDkuMDcwODggNjIuMjkwMyA5LjQzMzMzQzYyLjM5MTUgOS43ODY0OCA2Mi40NDIxIDEwLjE3NjggNjIuNDQyMSAxMC42MDQzVjE1LjAyMzNDNjIuMTg0NSAxNS4wNzkxIDYxLjc5MzQgMTUuMTQ0MiA2MS4yNjg5IDE1LjIxODVDNjAuNzUzNiAxNS4zMDIxIDYwLjE2OTMgMTUuMzQ0IDU5LjUxNTkgMTUuMzQ0QzU5LjA4MzUgMTUuMzQ0IDU4LjY4NzggMTUuMzAyMSA1OC4zMjg5IDE1LjIxODVDNTcuOTcgMTUuMTM0OSA1Ny42NjE4IDE1LjAwMDEgNTcuNDA0MSAxNC44MTQyQzU3LjE1NTcgMTQuNjI4NCA1Ni45NTc4IDE0LjM4NjcgNTYuODEwNiAxNC4wODkzQzU2LjY3MjYgMTMuNzkyIDU2LjYwMzYgMTMuNDI0OSA1Ni42MDM2IDEyLjk4ODFDNTYuNjAzNiAxMi41Njk5IDU2LjY4MTggMTIuMjE2NyA1Ni44MzgyIDExLjkyODZDNTcuMDAzOCAxMS42NDA1IDU3LjIyNDcgMTEuNDA4MiA1Ny41MDA3IDExLjIzMTZDNTcuNzc2OCAxMS4wNDU3IDU4LjA5NDMgMTAuOTE1NiA1OC40NTMxIDEwLjg0MTNDNTguODIxMiAxMC43NTc2IDU5LjIwMzEgMTAuNzE1OCA1OS41OTg4IDEwLjcxNThDNTkuNzgyOCAxMC43MTU4IDU5Ljk3NiAxMC43Mjk4IDYwLjE3ODUgMTAuNzU3NkM2MC4zODA5IDEwLjc3NjIgNjAuNTk3MSAxMC44MTM0IDYwLjgyNzIgMTAuODY5MlYxMC41OTA0QzYwLjgyNzIgMTAuMzk1MiA2MC44MDQyIDEwLjIwOTMgNjAuNzU4MiAxMC4wMzI4QzYwLjcxMjIgOS44NTYxOCA2MC42Mjk0IDkuNzAyODQgNjAuNTA5NyA5LjU3MjczQzYwLjM5OTMgOS40MzMzMyA2MC4yNDc1IDkuMzI2NDUgNjAuMDU0MiA5LjI1MjExQzU5Ljg3MDIgOS4xNzc3NiA1OS42MzU2IDkuMTQwNTggNTkuMzUwMyA5LjE0MDU4QzU4Ljk2MzggOS4xNDA1OCA1OC42MDk2IDkuMTY4NDcgNTguMjg3NSA5LjIyNDIzQzU3Ljk2NTQgOS4yNzk5OSA1Ny43MDMyIDkuMzQ1MDQgNTcuNTAwNyA5LjQxOTM5TDU3LjI5MzcgOC4wNTMyNUM1Ny41MDUzIDcuOTc4OSA1Ny44MTM2IDcuOTA0NTYgNTguMjE4NSA3LjgzMDIxQzU4LjYyMzQgNy43NTU4NiA1OS4wNTU4IDcuNzE4NjkgNTkuNTE1OSA3LjcxODY5Wk02OS4wODg3IDExLjU4MDFDNjkuMDg4NyAxMC44MjczIDY4LjkxODUgMTAuMjQxOSA2OC41NzggOS44MjM2NUM2OC4yNDY3IDkuNDA1NDUgNjcuNzA4NCA5LjE5NjM1IDY2Ljk2MzEgOS4xOTYzNUM2Ni44MDY2IDkuMTk2MzUgNjYuNjQxIDkuMjA1NjQgNjYuNDY2MiA5LjIyNDIzQzY2LjMwMDYgOS4yMzM1MiA2Ni4xMzQ5IDkuMjYxNCA2NS45NjkzIDkuMzA3ODdWMTMuNDc2QzY2LjExNjUgMTMuNTc4MiA2Ni4zMDk4IDEzLjY3NTggNjYuNTQ5IDEzLjc2ODdDNjYuNzk3NCAxMy44NTI0IDY3LjA1OTcgMTMuODk0MiA2Ny4zMzU4IDEzLjg5NDJDNjcuOTQzMSAxMy44OTQyIDY4LjM4NDggMTMuNjg1MSA2OC42NjA4IDEzLjI2NjlDNjguOTQ2MSAxMi44NDg3IDY5LjA4ODcgMTIuMjg2NCA2OS4wODg3IDExLjU4MDFaTTcwLjgwMDIgMTEuNTUyMkM3MC44MDAyIDEyLjEwOTggNzAuNzI2NiAxMi42MjEgNzAuNTc5NCAxMy4wODU3QzcwLjQ0MTQgMTMuNTUwMyA3MC4yMzg5IDEzLjk0OTkgNjkuOTcyMSAxNC4yODQ1QzY5LjcwNTIgMTQuNjE5MSA2OS4zNjkzIDE0Ljg3OTMgNjguOTY0NSAxNS4wNjUyQzY4LjU2ODggMTUuMjUxIDY4LjExNzkgMTUuMzQ0IDY3LjYxMTggMTUuMzQ0QzY3LjI3MTMgMTUuMzQ0IDY2Ljk1ODUgMTUuMzAyMSA2Ni42NzMyIDE1LjIxODVDNjYuMzg4IDE1LjEzNDkgNjYuMTUzMyAxNS4wNDE5IDY1Ljk2OTMgMTQuOTM5N1YxNy43Njk2SDY0LjI5OTJWOC4xMzY4OUM2NC42Mzk2IDguMDQzOTYgNjUuMDU4MyA3Ljk1NTY3IDY1LjU1NTIgNy44NzIwM0M2Ni4wNTIxIDcuNzg4MzkgNjYuNTc2NiA3Ljc0NjU3IDY3LjEyODcgNy43NDY1N0M2Ny42OTkyIDcuNzQ2NTcgNjguMjA5OSA3LjgzNDg2IDY4LjY2MDggOC4wMTE0M0M2OS4xMTE3IDguMTg4MDEgNjkuNDkzNiA4LjQ0MzU4IDY5LjgwNjQgOC43NzgxNEM3MC4xMjg1IDkuMTAzNDEgNzAuMzcyMyA5LjUwMzAzIDcwLjUzOCA5Ljk3N0M3MC43MTI4IDEwLjQ0MTcgNzAuODAwMiAxMC45NjY3IDcwLjgwMDIgMTEuNTUyMlpNNzEuOTMzIDExLjU4MDFDNzEuOTMzIDEwLjkzODkgNzIuMDI1IDEwLjM3NjYgNzIuMjA5IDkuODkzMzVDNzIuNDAyMyA5LjQxMDA5IDcyLjY1NTMgOS4wMTA0OCA3Mi45NjgyIDguNjk0NUM3My4yODEgOC4zNjkyMyA3My42Mzk5IDguMTI3NiA3NC4wNDQ4IDcuOTY5NjFDNzQuNDQ5NyA3LjgwMjMzIDc0Ljg2MzcgNy43MTg2OSA3NS4yODcgNy43MTg2OUM3Ni4yODA4IDcuNzE4NjkgNzcuMDUzOCA4LjAzMDAyIDc3LjYwNTkgOC42NTI2OEM3OC4xNjcyIDkuMjc1MzQgNzguNDQ3OCAxMC4yMDQ3IDc4LjQ0NzggMTEuNDQwN0M3OC40NDc4IDExLjUzMzYgNzguNDQzMiAxMS42NDA1IDc4LjQzNCAxMS43NjEzQzc4LjQzNCAxMS44NzI5IDc4LjQyOTQgMTEuOTc1MSA3OC40MjAyIDEyLjA2OEg3My42NTgzQzczLjcwNDMgMTIuNjUzNSA3My45MDY4IDEzLjEwODkgNzQuMjY1NiAxMy40MzQyQzc0LjYzMzcgMTMuNzUwMSA3NS4xNjI4IDEzLjkwODEgNzUuODUyOSAxMy45MDgxQzc2LjI1NzggMTMuOTA4MSA3Ni43ODE0IDEzLjg3NjggNzcuMTEyNiAxMy44MDI0Qzc3LjQ1MzEgMTMuNzI4MSA3Ny44NzIxIDEzLjYyMjYgNzguMDY1NCAxMy41Mzg5VjE0Ljg5NTZDNzcuOTczNCAxNC45NDIxIDc3Ljc1NzcgMTUuMDM3MyA3Ny41OTIxIDE1LjA5M0M3Ny40MzU2IDE1LjEzOTUgNzcuMjUxNiAxNS4xODEzIDc3LjA0IDE1LjIxODVDNzYuODM3NSAxNS4yNjUgNzYuNjE2NyAxNS4zMDIxIDc2LjM3NzQgMTUuMzNDNzYuMTM4MiAxNS4zNTc5IDc1Ljg5NDMgMTUuMzcxOCA3NS42NDU5IDE1LjM3MThDNzUuMDExIDE1LjM3MTggNzQuNDU4OSAxNS4yNzg5IDczLjk4OTYgMTUuMDkzQzczLjUyMDMgMTQuODk3OSA3My4xMzM4IDE0LjYzMyA3Mi44MzAxIDE0LjI5ODRDNzIuNTI2NSAxMy45NTQ2IDcyLjMwMSAxMy41NTUgNzIuMTUzOCAxMy4wOTk2QzcyLjAwNjYgMTIuNjM0OSA3MS45MzMgMTIuMTI4NCA3MS45MzMgMTEuNTgwMVpNNzYuNzc3NyAxMC44MjczQzc2Ljc3NzcgMTAuNTk1IDc2Ljc0NTUgMTAuMzc2NiA3Ni42ODExIDEwLjE3MjJDNzYuNjE2NyA5Ljk1ODQxIDc2LjUyMDEgOS43NzcxOSA3Ni4zOTEyIDkuNjI4NDlDNzYuMjcxNiA5LjQ3MDUgNzYuMTE5OCA5LjM0OTY5IDc1LjkzNTcgOS4yNjYwNUM3NS43NjA5IDkuMTczMTEgNzUuNTQ5MyA5LjEyNjY1IDc1LjMwMDggOS4xMjY2NUM3NS4wNDMyIDkuMTI2NjUgNzQuODE3NyA5LjE3Nzc2IDc0LjYyNDUgOS4yNzk5OUM3NC40MzEzIDkuMzcyOTIgNzQuMjY1NiA5LjQ5ODM4IDc0LjEyNzYgOS42NTYzN0M3My45OTg4IDkuODE0MzYgNzMuODk3NSA5Ljk5NTU4IDczLjgyMzkgMTAuMkM3My43NTAzIDEwLjQwNDUgNzMuNjk5NyAxMC42MTM2IDczLjY3MjEgMTAuODI3M0g3Ni43Nzc3Wk04NC40MzM0IDkuNDM0NzZDODQuMjk1NCA5LjM4ODMgODMuOTIyNyA5LjI5ODU3IDgzLjY3NDMgOS4yNTIxMUM4My40MzE2IDkuMTk2MzUgODMuMDQzOSA5LjE5NjM1IDgyLjcyMTkgOS4xOTYzNUM4Mi41Mzc4IDkuMTk2MzUgODIuMzQgOS4yMTQ5MyA4Mi4xMjg0IDkuMjUyMTFDODEuOTI1OSA5LjI4OTI4IDgxLjc4MzMgOS4zMjE4MSA4MS43MDA1IDkuMzQ5NjlWMTUuMTkwNkg4MC4wMzAzVjguMjQ4NDFDODAuMzUyNCA4LjEyNzYgODAuNzUyNyA4LjAxNjA4IDgxLjIzMTIgNy45MTM4NUM4MS43MTg5IDcuODAyMzMgODIuMjU3MiA3Ljc0NjU3IDgyLjg0NjEgNy43NDY1N0M4Mi45NTY1IDcuNzQ2NTcgODMuMDg1MyA3Ljc1NTg2IDgzLjIzMjYgNy43NzQ0NUM4My4zNzk4IDcuNzgzNzQgODMuNTI3IDcuODAyMzMgODMuNjc0MyA3LjgzMDIxQzgzLjgyMTUgNy44NDg4IDgzLjk2NDEgNy44NzY2OCA4NC4xMDIxIDcuOTEzODVDODQuMjQwMiA3Ljk0MTczIDg0LjM1MDYgNy45Njk2MSA4NC40MzM0IDcuOTk3NDlWOS40MzQ3NloiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=" data-v-f5c2522d=""><div class="close-popup" data-v-f5c2522d=""><span role="img" aria-label="close" class="anticon anticon-close white-c" data-v-f5c2522d=""><svg focusable="false" class="" data-icon="close" width="1em" height="1em" fill="currentColor" aria-hidden="true" viewBox="64 64 896 896"><path d="M563.8 512l262.5-312.9c4.4-5.2.7-13.1-6.1-13.1h-79.8c-4.7 0-9.2 2.1-12.3 5.7L511.6 449.8 295.1 191.7c-3-3.6-7.5-5.7-12.3-5.7H203c-6.8 0-10.5 7.9-6.1 13.1L459.4 512 196.9 824.9A7.95 7.95 0 00203 838h79.8c4.7 0 9.2-2.1 12.3-5.7l216.5-258.1 216.5 258.1c3 3.6 7.5 5.7 12.3 5.7h79.8c6.8 0 10.5-7.9 6.1-13.1L563.8 512z"></path></svg></span></div></div><!----><div class="user-info neutral-4-b" data-v-f5c2522d=""><div class="neutral-10-c" data-v-f5c2522d="">Fly</div><div class="user-info-logout neutral-6-c" data-v-f5c2522d="">退出登录</div><div class="current-version" data-v-f5c2522d="">v1.2.5</div></div><!----></main></div></template></div>
+                <div id="cf_notif_div_izj1nl07zu" class="cf_div_position_south light_body cf_div_theme_dark">
+                    <div id="all_notification_actions" style="display: none;">
+                        <a href="https://nudtcalculus.github.io/Hash-GS/#" class="all_notification_action_button" title="Clear all notifications" id="clear_all"><img src="chrome-extension://iipjdmnoigaobkamfhnojmglcdbnfaaf/img/ic_clear_all.svg"></a>
+                        <a href="https://nudtcalculus.github.io/Hash-GS/#" class="all_notification_action_button" title="Notification settings" id="open_settings"><img src="chrome-extension://iipjdmnoigaobkamfhnojmglcdbnfaaf/img/ic_settings_20px.svg"></a>
+                    </div>
+                </div></body><eusoft-chrome-extension-root-en id="eusoft-chrome-extension-id-en" _nghost-ng-c3962093456="" ng-version="18.2.13"><template _ngcontent-ng-c3962093456=""></template><!----><!----><!----><app-word-hint-render _ngcontent-ng-c3962093456="" _nghost-ng-c2356013537=""><template _ngcontent-ng-c2356013537=""></template><!----><!----></app-word-hint-render><app-translate-render _ngcontent-ng-c3962093456="" _nghost-ng-c3629952918=""><template _ngcontent-ng-c3629952918=""></template><!----></app-translate-render><app-capture-word _ngcontent-ng-c3962093456="" class="eusoft-chrome-extension-capture-word-container ng-tns-c2279770898-0 ng-star-inserted"><template shadowrootmode="open"><style>.eudic-tippy-content-container[_ngcontent-ng-c3962093456]{max-width:250px!important}</style><style>.eusoft-eudic-chrome-extension-explain-icon-class{position:fixed!important;visibility:visible!important;z-index:2147483646!important}.eusoft-eudic-chrome-extension-explain-popover-container-class{position:relative!important}.eusoft-eudic-chrome-extension-explain-container-class{position:fixed!important;visibility:visible!important;min-width:100px;height:auto!important;z-index:2147483646!important}.eudic-explain-content-overlay{position:absolute;top:0;left:0;width:100%;height:100%;z-index:2147483647}.eusoft-eudic-chrome-extension-explain-container-border-radius-class{box-shadow:0 2px 5px 1px #403c4329!important;border-radius:10px!important;overflow:hidden!important;background-color:#fff!important;box-sizing:border-box}.eudic-explain-resizer{z-index:2147483646!important;opacity:1;width:16px;height:16px;position:absolute}.eudic-explain-resizer-right{top:0;right:-8px;height:100%;cursor:ew-resize}.eudic-explain-resizer-bottom{bottom:-8px;left:0;width:100%;cursor:ns-resize}.eudic-explain-resizer-top{top:-8px;left:0;width:100%;cursor:ns-resize}.eudic-explain-resizer-left{top:0;left:-8px;height:100%;cursor:ew-resize}.eudic-explain-resizer-bottom-right{right:-8px;bottom:-8px;cursor:nwse-resize}.eudic-explain-resizer-bottom-left{left:-8px;bottom:-8px;cursor:nesw-resize}.eudic-explain-content-inner{position:relative}.eudic-toolbar-container{cursor:move;display:flex;flex-direction:row;align-items:center;padding-left:12px;padding-right:12px;justify-content:space-between}.eudic-toolbar-left-actions,.eudic-toolbar-right-actions{display:flex;flex-direction:row;align-items:center}.eudic-toolbar-container-title{font-size:14px;font-family:Helvetica;-webkit-user-select:none;user-select:none;line-height:1;word-break:break-word}.eudic-toolbar-container-title-icon{width:16px;height:16px;margin-right:8px}.eudic-toolbar-right-lock-button{margin-right:16px;cursor:pointer;width:16px;height:16px;display:flex;align-items:center}.eudic-toolbar-right-close-button{cursor:pointer;width:16px;height:16px;display:flex;align-items:center}.eudic-toolbar-inner-icon{width:16px;height:16px;display:flex}.eusoft-eudic-chrome-extension-explain-popover-container-class[data-content-script-theme=light] .eusoft-eudic-chrome-extension-explain-container-border-radius-class,.eusoft-eudic-chrome-extension-explain-popover-container-class[data-content-script-theme=light] .eudic-toolbar-container{background-color:#f7f9fc}.eusoft-eudic-chrome-extension-explain-popover-container-class[data-content-script-theme=light] .eudic-toolbar-container-title{color:#202124}.eusoft-eudic-chrome-extension-explain-popover-container-class[data-content-script-theme=dark] .eusoft-eudic-chrome-extension-explain-container-border-radius-class,.eusoft-eudic-chrome-extension-explain-popover-container-class[data-content-script-theme=dark] .eudic-toolbar-container{background-color:#141414}.eusoft-eudic-chrome-extension-explain-popover-container-class[data-content-script-theme=dark] .eudic-toolbar-container-title{color:#e6e6e6}
+</style><style>.eusoft-eudic-translate-failed-container[_ngcontent-ng-c3081775404]{position:fixed!important;bottom:50px!important;right:50px!important;border-radius:5px!important;box-shadow:0 6px 24px #00000014!important;z-index:2147483647!important}.eusoft-eudic-translate-failed-content-script[_ngcontent-ng-c3081775404]{border:1px solid #E8E8E8!important;background-color:#f8fafe!important}html.light-en   [_nghost-ng-c3081775404]   .eusoft-eudic-translate-failed-container[_ngcontent-ng-c3081775404]{border:1px solid #E8E8E8!important;background-color:#f8fafe!important}html.light-fr   [_nghost-ng-c3081775404]   .eusoft-eudic-translate-failed-container[_ngcontent-ng-c3081775404]{border:1px solid #E8E8E8!important;background-color:#f8fafe!important}html.light-de   [_nghost-ng-c3081775404]   .eusoft-eudic-translate-failed-container[_ngcontent-ng-c3081775404]{border:1px solid #E8E8E8!important;background-color:#f8fafe!important}html.light-es   [_nghost-ng-c3081775404]   .eusoft-eudic-translate-failed-container[_ngcontent-ng-c3081775404]{border:1px solid #E8E8E8!important;background-color:#f8fafe!important}html.dark-en   [_nghost-ng-c3081775404]   .eusoft-eudic-translate-failed-container[_ngcontent-ng-c3081775404]{border:1px solid #595959!important;background-color:#212125!important}html.dark-fr   [_nghost-ng-c3081775404]   .eusoft-eudic-translate-failed-container[_ngcontent-ng-c3081775404]{border:1px solid #595959!important;background-color:#212125!important}html.dark-de   [_nghost-ng-c3081775404]   .eusoft-eudic-translate-failed-container[_ngcontent-ng-c3081775404]{border:1px solid #595959!important;background-color:#212125!important}html.dark-es   [_nghost-ng-c3081775404]   .eusoft-eudic-translate-failed-container[_ngcontent-ng-c3081775404]{border:1px solid #595959!important;background-color:#212125!important}</style><!----><!----><div class="eusoft-eudic-chrome-extension-explain-popover-container-class ng-tns-c2279770898-0" data-content-script-theme="light"><!----></div></template></app-capture-word><app-translate-failed-retry _ngcontent-ng-c3962093456="" _nghost-ng-c3081775404=""><!----></app-translate-failed-retry><!----></eusoft-chrome-extension-root-en></html>
