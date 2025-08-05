@@ -54,7 +54,9 @@
   }
 }
 </style>
-    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <meta name="description" content="SimGen-HOI: Whole-body Action Generative for Humanoids-Object Interaction">
     <meta name="keywords" content="Humanoid-Object Interaction, Generative Model, Physical Simulation">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -212,16 +214,7 @@
             <h2 class="title is-3" data-eusoft-scrollable-element="1">Abstract</h2>
             <div class="content has-text-justified">
               <p>
-                Long-horizon humanoid-object interaction (HOI) is a fundamental challenge for embodied agents, requiring both semantic understanding and physical feasibility.
-                While recent generative approaches have shown impressive capabilities in synthesizing plausible HOI from language and scene context, 
-                they often suffer from unrealistic object contacts and incorrect physical motion due to a lack of physical simulation. 
-                Meanwhile, simulation-based HOI methods typically rely on motion capture demonstrations to train task-specific policies, 
-                which limits their ability to scale to long-horizon interactions involving diverse and compositional goals. 
-                To address this, we introduce \ourName, a unified framework that tightly couples a conditional diffusion model with a physics-based humanoid tracker. 
-                Our method first generates interaction trajectories conditioned on language, object geometry, and sparse waypoints. 
-                Then, a simulated humanoid robot refines the trajectory via contact-aware policy tracking, and the resulting humanoid-object states are fed back into the generative process for the next phase.
-                We also introduce an automatic keyframe extraction strategy to reduce the redundancy of the generative model. 
-                Experiments demonstrate that our approach significantly improves interaction robustness and long-term capability, achieving high success rates across diverse manipulation tasks. 
+                Generating controllable humanoids-object interaction (HOI) is a focal point of recent studies in animation and robotics. The key challenge is the physically consistent interaction between humanoids and objects. Recent HOI generation approaches, such as diffusion-based models, still cannot be directly tracked by humanoids in the simulation environment. Due to physically implausible contact and whole-body actions, it is hard for humanoids to imitate movements while manipulating objects. To address this, we introduce \textbf{SimGen-HOI}, a unified framework that improves the quality of generated actions and the tracking success rate of humanoids interacting with objects in simulated environments. Our HOI generation model is based on Diffusion Transformers(DiT), which is conditioned on text prompt, object geometry, sparse waypoints of the object, and initial humanoid pose. Then, a keyframe extraction strategy is applied to the model to improve the performance of the generation model. Once the humanoid tracks the generated actions, the physical simulation will constrain the humanoid's actions. We elaborated on a contact-aware policy to track the whole process, including humanoid actions and object interaction. Finally, benefit from the above designs, we can generate long-horizon sequences by autoregression to guide the humanoid to complete various tasks in indoor environments. We also introduce experiments that demonstrate that our approach greatly improves the success rate in physical simulation and can complete the long-term HOI mission, benefiting from the powerful generation capability of diffusion. Code will be released upon acceptance.
               </p>
             </div>
             <h2 class="title is-5">Render in Blender</h2>
@@ -248,10 +241,11 @@
             <img src="./SimGenHOI/pipline.png" class="center">
             <div class="content has-text-justified">
               <p style="margin-top: 30px">
-                (a) HOI generation conditioned on language and object; 
-                (b) learning a universal human-object interaction (HOI) policy;  
-                (c) closed-loop inference and control with physical simulation. 
-                <b>SimGenHOI</b> uses a diffusion model for keyframe generation and reinforcement learning to train a general HOI policy in the Isaac Gym simulator.
+                <b>Our proposed framework uses a diffusion model for key action generation and reinforcement learning to train a contact-aware HOI policy in the Isaac Gym simulator.</b>
+                The proposed framework consisting of three main components: 
+                <b>(a)</b> HOI generation conditioned on text prompt, object geometry, sparse waypoints in a 3D scene, and initial humanoid pose; Each small square represents a frame of data, and the blank part represents masked. 
+                <b>(b)</b> Contact-aware humanoid-object interaction (HOI) policy; \( \hat G \), \( p^{obj}_{t+1:t+n}\) and \( q_t^{obj}\) represent object's geometry, future trajectory. \( c_t\) and \( s^t_p\) represent contact guidance and humanoid proprioception. 
+                <b>(c)</b> Autoregression inference and tracked by physical simulation. 
               </p>
             </div>
           </div>
