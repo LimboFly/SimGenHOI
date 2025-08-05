@@ -214,7 +214,19 @@
             <h2 class="title is-3" data-eusoft-scrollable-element="1">Abstract</h2>
             <div class="content has-text-justified">
               <p>
-                Generating controllable humanoids-object interaction (HOI) is a focal point of recent studies in animation and robotics. The key challenge is the physically consistent interaction between humanoids and objects. Recent HOI generation approaches, such as diffusion-based models, still cannot be directly tracked by humanoids in the simulation environment. Due to physically implausible contact and whole-body actions, it is hard for humanoids to imitate movements while manipulating objects. To address this, we introduce \textbf{SimGen-HOI}, a unified framework that improves the quality of generated actions and the tracking success rate of humanoids interacting with objects in simulated environments. Our HOI generation model is based on Diffusion Transformers(DiT), which is conditioned on text prompt, object geometry, sparse waypoints of the object, and initial humanoid pose. Then, a keyframe extraction strategy is applied to the model to improve the performance of the generation model. Once the humanoid tracks the generated actions, the physical simulation will constrain the humanoid's actions. We elaborated on a contact-aware policy to track the whole process, including humanoid actions and object interaction. Finally, benefit from the above designs, we can generate long-horizon sequences by autoregression to guide the humanoid to complete various tasks in indoor environments. We also introduce experiments that demonstrate that our approach greatly improves the success rate in physical simulation and can complete the long-term HOI mission, benefiting from the powerful generation capability of diffusion. Code will be released upon acceptance.
+                Generating controllable humanoids-object interaction (HOI) is a focal point of recent studies in animation and robotics.
+                 The key challenge is the physically consistent interaction between humanoids and objects.
+                  Recent HOI generation approaches, such as diffusion-based models, still cannot be directly tracked by humanoids in the simulation environment.
+                   Due to physically implausible contact and whole-body actions, it is hard for humanoids to imitate movements while manipulating objects.
+                    To address this, we introduce <b>SimGen-HOI</b>, a unified framework that improves the quality of generated actions and the tracking success 
+                    rate of humanoids interacting with objects in simulated environments. 
+                    Our HOI generation model is based on Diffusion Transformers(DiT), which is conditioned on text prompt, object geometry, sparse waypoints of the object, 
+                    and initial humanoid pose. Then, a keyframe extraction strategy is applied to the model to improve the performance of the generation model. 
+                    Once the humanoid tracks the generated actions, the physical simulation will constrain the humanoid's actions. 
+                    We elaborated on a contact-aware policy to track the whole process, including humanoid actions and object interaction. 
+                    Finally, benefit from the above designs, we can generate long-horizon sequences by autoregression to guide the humanoid to complete various tasks in indoor environments. 
+                    We also introduce experiments that demonstrate that our approach greatly improves the success rate in physical simulation and can complete the long-term HOI mission, 
+                    benefiting from the powerful generation capability of diffusion. Code will be released upon acceptance.
               </p>
             </div>
             <h2 class="title is-5">Render in Blender</h2>
